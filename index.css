@@ -1,0 +1,94 @@
+:root {
+  --rgbVal: 0, 0, 0;
+  --rgbVal: 0, 131, 143;
+  --rgbVal : 66, 103, 178;  
+  --rgbVal : 78, 80, 133;
+
+  --warnRgb: 255, 170, 0;
+  --errorRgb: 255, 53, 71;
+  --grayRgbVal: 214, 214, 214;
+  --cbg_color: rgba(255, 255, 255, 1);
+  --shadow_color_rgb: 100, 100, 100;
+  --cbg_color: rgba(243, 243, 243, 255);
+  --gray: rgba(214, 214, 214, 1);
+  --primary_color: rgb(var(--rgbVal));
+  --secondary_color: rgba(255, 255, 255, 1);
+  --background_color: rgba(var(--rgbVal), 1);
+  --shadow_color: rgba(var(--shadow_color_rgb), 0.10);
+  --black_color: rgba(50, 50, 50, 255);
+}
+
+body {
+  border: 1px solid rgba(var(--shadow_color_rgb), .05);
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+*::-webkit-scrollbar-track {
+  border-radius: 2px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+  background-color: var(--secondary_color);
+}
+
+*::-webkit-scrollbar {
+  border-radius: 2px;
+  width: 15px;
+  background-color: var(--secondary_color);
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 2px; 
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, .1);
+  background-color: var(--primary_color);
+}
+
+#logoContainer {
+  height: 100%;
+  width: 150px;
+  box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.3);
+}
+
+#logo {
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 120px;
+  height: 40px;
+}
+
+#mainheader {
+  /* box-shadow: 0 4px 5px 0 var(--shadow_color), 0 1px 10px 0 var(--shadow_color), 0 2px 2px -1px var(--shadow_color); */
+  display: flex!important;
+  height: 60px;
+  border-bottom: 1px solid rgba(var(--shadow_color_rgb), .05);
+  /* background-color: rgba(var(--rgbVal), 1); */
+  color: var(--secondary_color)!important;
+  z-index: 1000;
+}
+
+#footerText {
+  height: 100%;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+#mainfooter {
+  border-top: 1px solid rgba(var(--shadow_color_rgb), .05);
+  height: 30px!important;
+}
+
+#maincontent {
+  height: calc(100% - 90px);
+}
+
+.appName {
+  margin-left: 30px;
+  font-size: 2em;
+  height: 100%;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  /* color: var(--secondary_color)!important; */
+}
